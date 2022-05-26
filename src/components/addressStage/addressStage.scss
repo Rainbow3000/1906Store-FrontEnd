@@ -1,0 +1,42 @@
+@import '../../responsive';
+.address-stage {
+    .address-line {
+        width: 50px;
+        height: 5px;
+        background-color: black;
+    }
+
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+        @include mobile {
+            width: 100%;
+        }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+
+        span {
+            &:first-child {
+                width: 60px;
+                display: block;
+                height: 60px;
+                border-radius: 50%;
+                background-color: rgb(186, 180, 180);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+
+        #checkout-pass {
+            background-color: rgb(92, 232, 92);
+        }
+    }
+}
